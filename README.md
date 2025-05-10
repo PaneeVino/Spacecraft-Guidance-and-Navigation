@@ -1,0 +1,1 @@
+This repository contains my assignments and reports for the Spacecraft Guidance & Navigation course that I completed at Politecnico Di Milano from September 2024 to February 2025. The course was instructed by Professors Francesco Topputto and Pierluigi Di Lizia, with valuable assistance from Teaching Assistants Sergio Bonaccorsi and Alessandro Morselli.
