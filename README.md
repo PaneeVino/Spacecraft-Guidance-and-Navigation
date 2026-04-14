@@ -137,28 +137,6 @@ run('Guidance/PeriodicOrbit.m')
 
 ---
 
-## Key Implementation Details
-
-### Data Structures
-
-The code relies on three main MATLAB structs passed through all functions:
-
-| Struct | Contents |
-|---|---|
-| `MODEL` | Mesh data, orbital states, system parameters |
-| `SOL` | Solver settings, load/continuation parameter λ, convergence tolerances, iteration counters |
-| `POST` | Solution history for post-processing and plotting |
-
-### Solver Architecture
-
-Both assignments share a common nonlinear solver architecture:
-
-- **Predictor step**: normalises the arc length and automatically detects the correct sign of the increment to avoid path reversals.
-- **Corrector step**: Newton-Raphson iterations with configurable tolerance and maximum iteration count.
-- **Convergence check**: residual norm evaluated at each iteration; solver exits on convergence or maximum iterations.
-
----
-
 ## Academic Context
 
 These codes were developed as part of the coursework for the **Spacecraft Guidance & Navigation** course at Politecnico di Milano. Benchmark problems include classical astrodynamics test cases covering Halo orbit continuation in the CR3BP, multi-impulse transfer optimisation, and statistical orbit determination with realistic ground-station geometries.
